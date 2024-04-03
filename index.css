@@ -1,27 +1,6 @@
 @tailwind base;
 @tailwind components;
-
-.components{
-   text-align: center;
-   width: 10%
-}
-
 @tailwind utilities;
 
 
- /*
- This class will come after @tailwind components 
-@layer components{
-    .btn{
-        @apply bg-[red]
-    }
-}
-*/
-
-
-/* This class will come after @tailwind utilities  */
-@layer utilities{
-    .btn{
-        @apply bg-[red]
-    }
-}
+ 
