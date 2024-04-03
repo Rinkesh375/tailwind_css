@@ -1,19 +1,27 @@
 @tailwind base;
 @tailwind components;
 
-.btn2 {
-  @apply bg-red-700 text-blue-600 border-[5px] border-black;
+.components{
+   text-align: center;
+   width: 10%
 }
 
 @tailwind utilities;
 
-/* This will over write the background color of element where we will apply btn  */
-.btn {
-  background-color: red;
-}
 
-.text-white {
-  color: chocolate;
+ /*
+ This class will come after @tailwind components 
+@layer components{
+    .btn{
+        @apply bg-[red]
+    }
 }
+*/
 
-/* This will over write the background color of element where we will apply btn  */
+
+/* This class will come after @tailwind utilities  */
+@layer utilities{
+    .btn{
+        @apply bg-[red]
+    }
+}
